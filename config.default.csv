@@ -1,0 +1,12 @@
+replace;//qaru.site/questions/;^https?://qaru\.site/questions/\d+/([a-z0-9-]+).*$;https://stackoverflow.com/search\?q=$1
+replace;//askdev.info/questions/;^https?://askdev\.info/questions/\d+/([a-z0-9-]+).*$;https://stackoverflow.com/search\?q=$1
+replace;//programmerz.ru/questions/;^https?://programmerz\.ru/questions/\d+/([a-z0-9-]+).*$;https://stackoverflow.com/search\?q=$1
+replace;4answered.com/questions/;^https?://[w.]*4answered\.com/questions/view/[a-z0-9-]+/([A-Za-z0-9-]+).*$;https://stackoverflow.com/search\?q=$1
+replace_fn;code.i-harness.com;^https?://code.i-harness.com/[a-z]+/q/([a-z0-9]+).*$;https://stackoverflow.com/questions/$fnHex
+replace_fn;code-examples.net;^https?://code-examples.net/[a-z]+/q/([a-z0-9]+).*$;https://stackoverflow.com/questions/$fnHex
+replace;//quabr.com/;^https?://quabr\.com/(\d+)/.*$;https://stackoverflow.com/questions/$1
+
+color;//stackoverflow.com/;#bbffbb
+color;www.w3schools.com;#bbffbb
+
+hide;//html.com
